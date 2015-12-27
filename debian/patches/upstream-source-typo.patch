@@ -3,6 +3,7 @@ Description: upstream source spelling correction
  spelling-error-in-binary tag; meant to be submitted to the
  upstream maintainer.
 Origin: debian
+Forwarded: https://github.com/firehol/iprange/pull/11
 Author: Jerome Benoit <calculus@rezozer.net>
 Last-Update: 2015-12-26
 
