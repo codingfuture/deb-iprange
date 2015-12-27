@@ -1,0 +1,3 @@
+version=3
+opts=dversionmangle=s/\+ds//,uversionmangle=s/-rc/~rc/,repacksuffix=+ds,pgpsigurlmangle=s/$/.asc/ \
+http://firehol.org/download/iprange/releases/v?(\d\.\d[\.\d]+)/iprange-(\d\.\d[\.\d]+)\.tar\.xz

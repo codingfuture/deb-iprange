@@ -1,0 +1,48 @@
+Description: upstream source spelling correction
+ Correct spelling typo in C source file as emitted by Lintian,
+ spelling-error-in-binary tag; meant to be submitted to the
+ upstream maintainer.
+Origin: debian
+Author: Jerome Benoit <calculus@rezozer.net>
+Last-Update: 2015-12-26
+
+--- a/iprange.c
++++ b/iprange.c
+@@ -31,7 +31,7 @@
+ #define MAX_INPUT_ELEMENT 255
+ 
+ #define BINARY_HEADER_V10 "iprange binary format v1.0\n"
+-static uint32_t endianess = 0x1A2B3C4D;
++static uint32_t endianness = 0x1A2B3C4D;
+ 
+ static char *PROG;
+ static int debug;
+@@ -1180,8 +1180,8 @@
+ 	}
+ 
+ 	loaded = fread(&endian, sizeof(uint32_t), 1, fp);
+-	if(endian != endianess) {
+-		fprintf(stderr, "%s: %s: incompatible endianess\n", PROG, ips->filename);
++	if(endian != endianness) {
++		fprintf(stderr, "%s: %s: incompatible endianness\n", PROG, ips->filename);
+ 		return 1;
+ 	}
+ 
+@@ -1222,7 +1222,7 @@
+ 	fprintf(stdout, "bytes %lu\n", (sizeof(network_addr_t) * ips->entries) + sizeof(uint32_t));
+ 	fprintf(stdout, "lines %lu\n", ips->entries);
+ 	fprintf(stdout, "unique ips %lu\n", ips->unique_ips);
+-	fwrite(&endianess, sizeof(uint32_t), 1, stdout);
++	fwrite(&endianness, sizeof(uint32_t), 1, stdout);
+ 	fwrite(ips->netaddrs, sizeof(network_addr_t), ips->entries, stdout);
+ }
+ 
+@@ -2274,7 +2274,7 @@
+ 		"		print binary data\n"
+ 		"		this is the fastest way to print a large ipset\n"
+ 		"		the result can be read by iprange on the same\n"
+-		"		architecture (no conversion of endianess)\n"
++		"		architecture (no conversion of endianness)\n"
+ 		"\n"
+ 		"	--print-prefix STRING\n"
+ 		"		print STRING before each IP, range or CIDR\n"

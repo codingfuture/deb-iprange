@@ -1,0 +1,28 @@
+Source: iprange
+Section: net
+Priority: optional
+Maintainer: Jerome Benoit <calculus@rezozer.net>
+Build-Depends:
+ debhelper (>= 9), autotools-dev, autoconf-archive, dh-autoreconf, help2man
+Standards-Version: 3.9.6
+Homepage: http://firehol.org
+Vcs-Git: git://anonscm.debian.org/collab-maint/iprange.git
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/iprange.git
+
+Package: iprange
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: optimizing ipsets for iptables
+ This tool is capable of managing sets of IPs.
+ .
+ Why to use iprange over any other aggregate ?
+  * simpler
+  * supports many input formats, all together in the same file
+  * faster, actually a lot faster (thanks to the original design
+    by Gabriel Somlo)
+  * can reduce the subnets/prefixes to produce high-performing
+    netfilter/iptables ipsets
+  * can compare files with IPs to find if they overlap and to what degree
+  * can find the IPs common to a set of files
+  * can exclude IPs (merge a set of files while excluding all IPs matched
+    by another set of files)
