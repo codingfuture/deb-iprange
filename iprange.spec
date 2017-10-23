@@ -1,10 +1,10 @@
 Summary:	Manage ip ranges
-Name:		@PACKAGE_NAME@
-Version:	@PACKAGE_RPM_VERSION@
-Release:	@PACKAGE_RPM_RELEASE@%{?release_suffix}%{?dist}
+Name:		iprange
+Version:	1.0.4
+Release:	%{?release_suffix}%{?dist}
 License:	GPLv2+
 URL:		http://firehol.org
-Source:		%{name}-@PACKAGE_VERSION@.tar.bz2
+Source:		%{name}-1.0.4.tar.bz2
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -12,7 +12,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Manage ip ranges.
 
 %prep
-%setup -q -n %{name}-@PACKAGE_VERSION@
+%setup -q -n %{name}-1.0.4
 
 %build
 %configure \

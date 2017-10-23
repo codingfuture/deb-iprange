@@ -1,10 +1,18 @@
+iprange (1.0.4) - 2017-09-16
+
+ - bugfix: fix invalid size of ipset while reducing non-optimized ipsets #18
+
+iprange (1.0.3) - 2016-10-16
+
+ - speedup: used high speed mutex instead of read/write locks, for speed
+
 iprange (1.0.2) - 2015-12-23
 
  - bugfix: last batch of dns host resolutions were being lost from results
 
 iprange (1.0.1) - 2015-11-28
 
- - resolved a case with dns resolution, where all theats were waiting
+ - resolved a case with dns resolution, where all threads were waiting
    without resolving the IPs
  - packaging improvements
 

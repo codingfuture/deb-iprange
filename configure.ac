@@ -5,7 +5,7 @@ AC_PREREQ(2.60)
 
 define([VERSION_MAJOR], [1])
 define([VERSION_MINOR], [0])
-define([VERSION_FIX], [2])
+define([VERSION_FIX], [4])
 define([VERSION_NUMBER], VERSION_MAJOR[.]VERSION_MINOR[.]VERSION_FIX)
 define([VERSION_SUFFIX], [])
 
@@ -14,10 +14,24 @@ PACKAGE_RPM_RELEASE="1"
 
 AC_INIT([iprange], VERSION_NUMBER[]VERSION_SUFFIX)
 
+AC_ARG_ENABLE([man],
+              [AS_HELP_STRING([--disable-man], [disable manpage installation @<:@enabled@:>@])],
+              ,
+              [enable_man="yes"])
+AM_CONDITIONAL([ENABLE_MAN], [test "${enable_man}" = "yes"])
+
 AM_MAINTAINER_MODE([disable])
 if test x"$USE_MAINTAINER_MODE" = xyes; then
 AC_MSG_NOTICE(***************** MAINTAINER MODE *****************)
 PACKAGE_BUILT_DATE=$(date '+%d %b %Y')
+
+AX_NEED_PROG([HELP2MAN],[help2man],[])
+else
+  if test ! -f iprange.1; then
+    if test x"$enable_man" = xyes; then
+      AC_MSG_ERROR([docs not built, use '--disable-man' or --enable-maintainer-mode])
+    fi
+  fi
 fi
 
 PACKAGE_RPM_VERSION="VERSION_NUMBER"
