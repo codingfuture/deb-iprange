@@ -1,3 +1,9 @@
+iprange (1.0.4-cftrusty1) trusty; urgency=medium
+
+  * New upstream version 1.0.4
+
+ -- Andrey Galkin <andrey@futoin.org>  Mon, 23 Oct 2017 10:10:19 +0300
+
 iprange (1.0.2+ds-1) unstable; urgency=medium
 
   * Initial release. (Closes: #809024)
