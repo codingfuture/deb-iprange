@@ -1,3 +1,9 @@
+iprange (1.0.4-cftrusty2) trusty; urgency=medium
+
+  * Attempt to enable mainainer's mode
+
+ -- Andrey Galkin <andrey@futoin.org>  Mon, 23 Oct 2017 10:39:38 +0300
+
 iprange (1.0.4-cftrusty1) trusty; urgency=medium
 
   * New upstream version 1.0.4
