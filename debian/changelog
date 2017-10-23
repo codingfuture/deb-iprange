@@ -1,3 +1,9 @@
+iprange (1.0.4-cftrusty3) trusty; urgency=medium
+
+  * Fake release to workaround launchpad issue
+
+ -- Andrey Galkin <andrey@futoin.org>  Mon, 23 Oct 2017 10:39:38 +0300
+
 iprange (1.0.4-cftrusty2) trusty; urgency=medium
 
   * Attempt to enable mainainer's mode
