@@ -1,3 +1,11 @@
+iprange (1.0.4-cfxenial1) xenial; urgency=medium
+
+  * New upstream version 1.0.4
+  * Removed upstream patches
+  * Attempt to enable mainainer's mode
+
+ -- Andrey Galkin <andrey@futoin.org>  Mon, 23 Oct 2017 10:41:53 +0300
+
 iprange (1.0.2+ds-1) unstable; urgency=medium
 
   * Initial release. (Closes: #809024)
