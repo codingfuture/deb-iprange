@@ -1,3 +1,9 @@
+iprange (1.0.4-cfbionic1) xenial; urgency=medium
+
+  * Retarget
+
+ -- Andrey Galkin <andrey@futoin.org>  Mon, 12 Aug 2018 13:06:00 +0300
+
 iprange (1.0.4-cfxenial1) xenial; urgency=medium
 
   * New upstream version 1.0.4
