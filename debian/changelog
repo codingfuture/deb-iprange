@@ -1,8 +1,8 @@
-iprange (1.0.4-cfbionic1) xenial; urgency=medium
+iprange (1.0.4-cfbionic1) bionic; urgency=medium
 
-  * Retarget
+  * Retarget bionic
 
- -- Andrey Galkin <andrey@futoin.org>  Mon, 12 Aug 2018 13:06:00 +0300
+ -- Andrey Galkin <andrey@futoin.org>  Fri, 17 Aug 2018 16:24:15 +0300
 
 iprange (1.0.4-cfxenial1) xenial; urgency=medium
 
